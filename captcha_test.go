@@ -169,3 +169,19 @@ func TestCaptchaGetOneZeroThreeZero(t *testing.T) {
 		t.Errorf("It should return 0 * Zero but get %q", result)
 	}
 }
+
+func TestCaptchaGetTwoZeroThreeZero(t *testing.T) {
+	result := Captcha(2, 0, 3, 5)
+
+	if result != "Zero * 5" {
+		t.Errorf("It should return Zero * 5 but get %q", result)
+	}
+}
+
+func TestCaptchaGetTwoZeroTwoZero(t *testing.T) {
+	result := Captcha(2, 0, 2, 5)
+
+	if result != "Zero - 5" {
+		t.Errorf("It should return Zero - 5 but get %q", result)
+	}
+}

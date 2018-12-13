@@ -8,10 +8,16 @@ func Operators(operator int) string {
 	StrOperator := []string{" + ", " - ", " * "}
 	return StrOperator[operator-1]
 }
-func ReturnRight(right int) string {
+func ReturnStrNumber(number int) string {
 	StrNumber := []string{"Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"}
-	return StrNumber[right]
+	return StrNumber[number]
 }
 func Captcha(pattern, left, operator, right int) string {
-	return strconv.Itoa(left) + Operators(operator) + ReturnRight(right)
+	if pattern == 1 {
+		return strconv.Itoa(left) + Operators(operator) + ReturnStrNumber(right)
+	} else if pattern == 2 {
+		return ReturnStrNumber(left) + Operators(operator) + strconv.Itoa(right)
+	} else {
+		return "Wrong Input !!! Please Try Again..."
+	}
 }
