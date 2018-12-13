@@ -25,5 +25,8 @@ func Captcha(pattern, left, operator, right int) string {
 	if left == 2 {
 		return "2 + One"
 	}
-	return "1 + One"
+	if left == 1 {
+		return "1 + One"
+	}
+	return "0 + One"
 }

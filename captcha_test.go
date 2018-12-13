@@ -2,6 +2,14 @@ package captcha
 
 import "testing"
 
+func TestCaptchaGetOneZeroOneOne(t *testing.T) {
+	result := Captcha(1, 0, 1, 1)
+
+	if result != "0 + One" {
+		t.Errorf("Its should return 0 + One but get %q", result)
+	}
+}
+
 func TestCaptchaGetAllOne(t *testing.T) {
 	result := Captcha(1, 1, 1, 1)
 
