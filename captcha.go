@@ -4,6 +4,7 @@ import (
 	"strconv"
 )
 
+//Try to push to muyonz
 func Operators(operator int) string {
 	StrOperator := []string{" + ", " - ", " * "}
 	return StrOperator[operator-1]
