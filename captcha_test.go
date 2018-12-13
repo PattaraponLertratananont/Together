@@ -151,10 +151,21 @@ func TestCaptchaGetOneZeroOneNine(t *testing.T) {
 		t.Errorf("It should return 0 + Nine but get %q", result)
 	}
 }
+
+//Simple Test operator minus(-)
 func TestCaptchaGetOneZeroTwoZero(t *testing.T) {
 	result := Captcha(1, 0, 2, 0)
 
 	if result != "0 - Zero" {
 		t.Errorf("It should return 0 - Zero but get %q", result)
+	}
+}
+
+////Simple Test operator multiple(*)
+func TestCaptchaGetOneZeroThreeZero(t *testing.T) {
+	result := Captcha(1, 0, 3, 0)
+
+	if result != "0 * Zero" {
+		t.Errorf("It should return 0 * Zero but get %q", result)
 	}
 }
