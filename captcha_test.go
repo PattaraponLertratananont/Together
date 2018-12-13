@@ -105,3 +105,49 @@ func TestCaptchaGetOneZeroOneThree(t *testing.T) {
 		t.Errorf("It should return 0 + Three but get %q", result)
 	}
 }
+func TestCaptchaGetOneZeroOneFour(t *testing.T) {
+	result := Captcha(1, 0, 1, 4)
+
+	if result != "0 + Four" {
+		t.Errorf("It should return 0 + Four but get %q", result)
+	}
+}
+
+func TestCaptchaGetOneZeroOneFive(t *testing.T) {
+	result := Captcha(1, 0, 1, 5)
+
+	if result != "0 + Five" {
+		t.Errorf("It should return 0 + Five but get %q", result)
+	}
+}
+
+func TestCaptchaGetOneZeroOneSix(t *testing.T) {
+	result := Captcha(1, 0, 1, 6)
+
+	if result != "0 + Six" {
+		t.Errorf("It should return 0 + Six but get %q", result)
+	}
+}
+
+func TestCaptchaGetOneZeroOneSeven(t *testing.T) {
+	result := Captcha(1, 0, 1, 7)
+
+	if result != "0 + Seven" {
+		t.Errorf("It should return 0 + Seven but get %q", result)
+	}
+}
+func TestCaptchaGetOneZeroOneEight(t *testing.T) {
+	result := Captcha(1, 0, 1, 8)
+
+	if result != "0 + Eight" {
+		t.Errorf("It should return 0 + Eight but get %q", result)
+	}
+}
+
+func TestCaptchaGetOneZeroOneNine(t *testing.T) {
+	result := Captcha(1, 0, 1, 9)
+
+	if result != "0 + Nine" {
+		t.Errorf("It should return 0 + Nine but get %q", result)
+	}
+}
