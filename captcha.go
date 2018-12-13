@@ -1,6 +1,9 @@
 package captcha
 
 func Captcha(pattern, left, operator, right int) string {
+	if left == 7 {
+		return "7 + One"
+	}
 	if left == 6 {
 		return "6 + One"
 	}
