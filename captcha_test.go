@@ -33,3 +33,11 @@ func TestCaptchaGetOneOneOneTwo(t *testing.T) {
 		t.Errorf("Its should return 1 + Two but get %q", result)
 	}
 }
+
+func TestCaptchaGetTwoOneOneTwo(t *testing.T) {
+	result := Captcha(2, 1, 1, 2)
+
+	if result != "One + 2" {
+		t.Errorf("Its should return One + 2 but get %q", result)
+	}
+}
