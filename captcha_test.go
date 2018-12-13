@@ -97,3 +97,11 @@ func TestCaptchaGetOneZeroOneTwo(t *testing.T) {
 		t.Errorf("It should return 0 + Two but get %q", result)
 	}
 }
+
+func TestCaptchaGetOneZeroOneThree(t *testing.T) {
+	result := Captcha(1, 0, 1, 3)
+
+	if result != "0 + Three" {
+		t.Errorf("It should return 0 + Three but get %q", result)
+	}
+}
