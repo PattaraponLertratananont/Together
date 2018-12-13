@@ -41,3 +41,11 @@ func TestCaptchaGetOneFiveOneOne(t *testing.T) {
 		t.Errorf("It should return 5 + One but get %q", result)
 	}
 }
+
+func TestCaptchaGetOneSixOneOne(t *testing.T) {
+	result := Captcha(1, 6, 1, 1)
+
+	if result != "6 + One" {
+		t.Errorf("Its should return 6 + One but get %q", result)
+	}
+}
