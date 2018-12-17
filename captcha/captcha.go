@@ -1,6 +1,7 @@
-package captcha
+package main
 
 import (
+	"fmt"
 	"strconv"
 )
 
@@ -21,4 +22,13 @@ func Captcha(pattern, left, operator, right int) string {
 	} else {
 		return "Wrong Input !!! Please Try Again..."
 	}
+}
+
+func main() {
+	var a, b, c, d int
+	fmt.Scan(&a)
+	fmt.Scan(&b)
+	fmt.Scan(&c)
+	fmt.Scan(&d)
+	fmt.Println("Output = " + Captcha(a, b, c, d))
 }
