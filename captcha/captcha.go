@@ -24,6 +24,7 @@ func Captcha(pattern, left, operator, right int) string {
 	}
 }
 
+<<<<<<< HEAD
 func main() {
 	var a, b, c, d int
 	fmt.Scan(&a)
@@ -32,3 +33,8 @@ func main() {
 	fmt.Scan(&d)
 	fmt.Println("Output = " + Captcha(a, b, c, d))
 }
+=======
+// func Patterns(l, o, r int) string {
+// 	return strconv.Itoa(l) + Operators(o) + ReturnStrNumber(r)
+//}
+>>>>>>> ef82087ee983a2362675e5ec768f8debda2cc1b4

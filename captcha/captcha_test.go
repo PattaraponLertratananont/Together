@@ -2,8 +2,22 @@ package main
 
 import "testing"
 
+// func TryTestCaptcha(numner int) int {
+// 	LeftNumber := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+// 	return LeftNumber[number]
+// }
 func TestCaptchaGetOneZeroOneOne(t *testing.T) {
-	result := Captcha(1, 0, 1, 1)
+	PatternNumber := []int{1, 2}
+	LrftNumber := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	StrNumOperator := []int{1, 2, 3}
+	RightNumber := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+	// PatternNumber = PatternNumber[0:2]
+	// LrftNumber = LrftNumber[0:10]
+	// StrNumOperator = StrNumOperator[0:4]
+	// RightNumber = RightNumber[0:10]
+
+	result := Captcha(PatternNumber[0], LrftNumber[0], StrNumOperator[0], RightNumber[1])
 
 	if result != "0 + One" {
 		t.Errorf("Its should return 0 + One but get %q", result)
