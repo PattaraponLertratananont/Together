@@ -22,3 +22,7 @@ func Captcha(pattern, left, operator, right int) string {
 		return "Wrong Input !!! Please Try Again..."
 	}
 }
+
+// func Patterns(l, o, r int) string {
+// 	return strconv.Itoa(l) + Operators(o) + ReturnStrNumber(r)
+//}
