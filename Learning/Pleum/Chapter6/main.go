@@ -8,6 +8,10 @@ func main() {
 
 	fmt.Print("Input destinated number: ")
 	fmt.Scanln(&input)
+
+	for i := 1; i <= input; i++ {
+		fmt.Printf("%d ", i)
+	}
 }
 func init() {
 	fmt.Println("Hi, chapter6")
