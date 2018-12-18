@@ -12,6 +12,14 @@ func main() {
 	fmt.Scanln(&first)
 	fmt.Print("Input second number: ")
 	fmt.Scanln(&second)
+
+	if first < second {
+		fmt.Println("Max: ", second)
+	} else if first > second {
+		fmt.Println("Max: ", first)
+	} else {
+		fmt.Println("It's equal.")
+	}
 }
 func init() {
 	fmt.Println("Hi, chapter4")
