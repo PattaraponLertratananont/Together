@@ -5,6 +5,14 @@ import (
 	"fmt"
 )
 
+func max(first, second int) int {
+	if first < second {
+		return second
+	} else if first > second {
+		return first
+	}
+	return 0
+}
 func main() {
 	var first, second int
 
@@ -13,13 +21,12 @@ func main() {
 	fmt.Print("Input second number: ")
 	fmt.Scanln(&second)
 
-	if first < second {
-		fmt.Println("Max: ", second)
-	} else if first > second {
-		fmt.Println("Max: ", first)
-	} else {
+	if result := max(first, second); result == 0 {
 		fmt.Println("It's equal.")
+	} else {
+		fmt.Println("Max: ", result)
 	}
+
 }
 func init() {
 	fmt.Println("Hi, chapter4")
