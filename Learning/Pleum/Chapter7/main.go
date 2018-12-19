@@ -4,9 +4,7 @@ package main
 import "fmt"
 
 func main() {
-	var input int
-	sum := 0
-	average := 0
+	var input, sum, average float64
 
 	for i := 1; i <= 10; i++ {
 		fmt.Printf("Input number %d: ", i)
