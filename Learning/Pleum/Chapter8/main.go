@@ -6,8 +6,14 @@ import "fmt"
 
 func main() {
 	var input int
-	fmt.Print("Input number: ")
-	fmt.Scanln(&input)
+	for {
+		fmt.Print("Input number: ")
+		fmt.Scanln(&input)
+		if input == 0 {
+
+			break
+		}
+	}
 }
 func init() {
 	fmt.Println("Hi, chapter8")
