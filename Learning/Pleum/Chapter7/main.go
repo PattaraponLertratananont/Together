@@ -4,16 +4,15 @@ package main
 import "fmt"
 
 func main() {
-	var input, sum, average float64
+	var input, sum float64
 
 	for i := 1; i <= 10; i++ {
 		fmt.Printf("Input number %d: ", i)
 		fmt.Scanln(&input)
 		sum += input
 	}
-	average = sum / 10
 	fmt.Println("Sum: ", sum)
-	fmt.Println("Average: ", average)
+	fmt.Println("Average: ", sum/10)
 }
 func init() {
 	fmt.Println("Hi, chapter7")
