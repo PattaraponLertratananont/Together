@@ -6,8 +6,10 @@ import "fmt"
 func main() {
 	var input float32
 
-	fmt.Print("Input number 1: ")
-	fmt.Scanln(&input)
+	for i := 1; i <= 10; i++ {
+		fmt.Printf("Input number %d: ", i)
+		fmt.Scanln(&input)
+	}
 }
 func init() {
 	fmt.Println("Hi, chapter7")
