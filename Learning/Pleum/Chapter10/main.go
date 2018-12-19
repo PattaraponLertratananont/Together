@@ -4,7 +4,7 @@ package main
 import "fmt"
 
 func main() {
-	var a, b, c int
+	var a, b, c, max int
 
 	fmt.Print("A: ")
 	fmt.Scanln(&a)
@@ -12,6 +12,14 @@ func main() {
 	fmt.Scanln(&b)
 	fmt.Print("C: ")
 	fmt.Scanln(&c)
+
+	if a > b {
+		max = a
+	}
+	if c > max {
+		max = c
+	}
+	fmt.Println("Max: ", max)
 }
 func init() {
 	fmt.Println("Hi, chapter10")
