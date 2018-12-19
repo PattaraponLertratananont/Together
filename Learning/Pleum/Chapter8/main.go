@@ -5,21 +5,21 @@ package main
 import "fmt"
 
 func main() {
-	var input, even, odd int
-	sumeven, sumodd := 0, 0
+	var input, evencount, oddcount int
+	evensum, oddsum := 0, 0
 	for {
 		fmt.Print("Input number: ")
 		fmt.Scanln(&input)
 		if input%2 == 0 {
-			sumeven += input
-			even++
+			evensum += input
+			evencount++
 		} else {
-			sumodd += input
-			odd++
+			oddsum += input
+			oddcount++
 		}
 		if input == 0 {
-			fmt.Printf("Sum %d even numbers: %d\n", even-1, sumeven)
-			fmt.Printf("Sum %d odd numbers: %d\n", odd, sumodd)
+			fmt.Printf("Sum %d even numbers: %d\n", evencount-1, evensum)
+			fmt.Printf("Sum %d odd numbers: %d\n", oddcount, oddsum)
 			break
 		}
 	}
