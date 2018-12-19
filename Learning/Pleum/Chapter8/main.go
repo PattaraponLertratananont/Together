@@ -5,12 +5,16 @@ package main
 import "fmt"
 
 func main() {
-	var input int
+	var input, even, odd int
 	for {
 		fmt.Print("Input number: ")
 		fmt.Scanln(&input)
+		if input%2 == 0 {
+			even++
+		} else {
+			odd++
+		}
 		if input == 0 {
-
 			break
 		}
 	}
