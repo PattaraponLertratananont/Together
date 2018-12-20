@@ -3,11 +3,10 @@ package main
 //เขียนโปรแกรมinputเลข 3ตัว แสดงผลว่าเป็นสามเหลี่ยมมุมฉากหรือไม่?
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
-	var x, y, z float64
+	var x, y, z int
 
 	fmt.Print("X: ")
 	fmt.Scanln(&x)
@@ -16,7 +15,7 @@ func main() {
 	fmt.Print("Z: ")
 	fmt.Scanln(&z)
 
-	if math.Pow(x, 2)+math.Pow(y, 2) == math.Pow(z, 2) {
+	if (x*x)+(y*y) == (z*z) || (y*y)+(z*z) == (x*x) || (x*x)+(z*z) == (y*y) {
 		fmt.Println("X, Y, Z are side of right triangle.")
 	} else {
 		fmt.Println("No, it's not side of right triangle. ")
