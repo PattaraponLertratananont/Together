@@ -19,7 +19,15 @@ func main() {
 	if c > max {
 		max = c
 	}
-	fmt.Println("Max: ", max)
+	if max == a && max < b+c {
+		fmt.Println("A, B, C are side of triangle.")
+	} else if max == b && max < a+c {
+		fmt.Println("A, B, C are side of triangle.")
+	} else if max == c && max < a+b {
+		fmt.Println("A, B, C are side of triangle.")
+	} else {
+		fmt.Println("A, B, C are not side triangle.")
+	}
 }
 func init() {
 	fmt.Println("Hi, chapter10")
