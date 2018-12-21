@@ -5,8 +5,7 @@ import "fmt"
 
 func main() {
 	var first, second int
-	p := 2
-	sum := 1
+	p, sum := 2, 1
 	fmt.Print("Input first number: ")
 	fmt.Scanln(&first)
 	fmt.Print("Input second number: ")
@@ -14,9 +13,9 @@ func main() {
 
 	for first > 1 && p < first && second > 1 && p < second {
 		if first%p == 0 && second%p == 0 {
-			sum = sum * p
-			first = first / p
-			second = second / p
+			sum *= p
+			first /= p
+			second /= p
 			p = 2
 		} else {
 			p++
