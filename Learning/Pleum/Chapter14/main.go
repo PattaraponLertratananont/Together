@@ -18,7 +18,11 @@ func main() {
 			p++
 		}
 	}
-	fmt.Printf("%d \n", p)
+	if input == 0 || input == 1 {
+		fmt.Printf("%d ", input)
+	} else {
+		fmt.Printf("%d \n", p)
+	}
 
 }
 func init() {
