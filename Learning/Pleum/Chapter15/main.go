@@ -5,7 +5,7 @@ import "fmt"
 
 func main() {
 	var first, second int
-	p, sum := 2, 1
+	p, gcd := 2, 1
 	fmt.Print("Input first number: ")
 	fmt.Scanln(&first)
 	fmt.Print("Input second number: ")
@@ -13,7 +13,7 @@ func main() {
 
 	for p < first && p < second {
 		if first%p == 0 && second%p == 0 {
-			sum *= p
+			gcd *= p
 			first /= p
 			second /= p
 			p = 2
@@ -21,7 +21,7 @@ func main() {
 			p++
 		}
 	}
-	fmt.Println("Greatest common divisor: ", sum)
+	fmt.Println("Greatest common divisor: ", gcd)
 }
 func init() {
 	fmt.Println("Hi, chapter15")
