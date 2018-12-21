@@ -5,15 +5,15 @@ import "fmt"
 
 func main() {
 	var first, second int
-	cd, gcd := 0, 0
+	maxcd, gcd := 0, 0
 	fmt.Print("Input first number: ")
 	fmt.Scanln(&first)
 	fmt.Print("Input second number: ")
 	fmt.Scanln(&second)
 
-	for cd = 1; cd < first && cd < second; cd++ {
-		if first%cd == 0 && second%cd == 0 {
-			gcd = cd
+	for maxcd = 1; maxcd < first && maxcd < second; maxcd++ {
+		if first%maxcd == 0 && second%maxcd == 0 {
+			gcd = maxcd
 		}
 	}
 	fmt.Println("Greatest common divisor: ", gcd)
