@@ -11,7 +11,7 @@ func main() {
 	fmt.Print("Input second number: ")
 	fmt.Scanln(&second)
 
-	for first > 1 && p < first && second > 1 && p < second {
+	for p < first && p < second {
 		if first%p == 0 && second%p == 0 {
 			sum *= p
 			first /= p
