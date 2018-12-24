@@ -2,14 +2,13 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
-	go fmt.Println("TeamA: crawl")
-	fmt.Println("TeamB: run")
-	fmt.Println("TeamC: fly")
-	time.Sleep(1 * time.Second)
+	buyGkassesMinimart()
+	buyWatchesCentral()
+	buyFruitsParagon()
+	buyCarHonda()
 }
 func init() {
 	fmt.Println("Hi, goroutine")
