@@ -41,11 +41,11 @@ func main() {
 	studentLists = append(studentLists, student2)
 	studentLists = append(studentLists, student3)
 
-	studentListsJson, err := json.Marshal(studentLists)
+	studentListsJSON, err := json.Marshal(studentLists)
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println(string(studentListsJson))
+	fmt.Println(string(studentListsJSON))
 }
 func init() {
 	fmt.Println("Hi, student")
