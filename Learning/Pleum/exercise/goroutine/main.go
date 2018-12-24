@@ -15,6 +15,7 @@ func buyWatchesCentral() {
 }
 func buyFruitsParagon() {
 	time.Sleep(1 * time.Second)
+	fmt.Println("ซื้อผลไม้ ที่พารากอน")
 }
 func buyCarHonda() {
 	time.Sleep(1 * time.Second)
@@ -22,10 +23,12 @@ func buyCarHonda() {
 }
 
 func main() {
-	buyGkassesMinimart()
-	buyWatchesCentral()
+	start := time.Now()
+	go buyGkassesMinimart()
+	go buyWatchesCentral()
 	buyFruitsParagon()
 	buyCarHonda()
+	fmt.Println("total time: ", time.Since(start))
 }
 func init() {
 	fmt.Println("Hi, goroutine")
