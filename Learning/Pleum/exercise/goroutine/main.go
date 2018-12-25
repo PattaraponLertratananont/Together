@@ -30,11 +30,15 @@ func main() {
 	start := time.Now()
 	go buyGkassesMinimart()
 	go buyWatchesCentral()
-	ch := make(chan<- string)
+	ch := make(chan string)
 	go sendToA(ch)
 	buyFruitsParagon()
 	buyCarHonda()
-	fmt.Println("total time: ", time.Since(start))
+	messageFromB := <-ch
+	if messageFromB == "กำลังส่งของให้A" {
+		fmt.Println("Aได้รับของแล้ว")
+		fmt.Println("total time: ", time.Since(start))
+	}
 }
 func init() {
 	fmt.Println("Hi, goroutine")
