@@ -21,6 +21,10 @@ func buyCarHonda() {
 	time.Sleep(1 * time.Second)
 	fmt.Println("ซื้อรถ ที่ฮอนด้า")
 }
+func sendToA(message chan<- string) {
+	time.Sleep(1 * time.Second)
+	message <- "กำลังส่งของให้A"
+}
 
 func main() {
 	start := time.Now()
