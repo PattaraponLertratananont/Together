@@ -31,3 +31,10 @@ func TestFizzBuzzFour(t *testing.T) {
 		t.Errorf("Expect 4 but it gets %q", result)
 	}
 }
+func TestFizzBuzzFive(t *testing.T) {
+	result := Fizzbuzz(5)
+
+	if result != "Buzz" {
+		t.Errorf("Expect Buzz but it get %q", result)
+	}
+}

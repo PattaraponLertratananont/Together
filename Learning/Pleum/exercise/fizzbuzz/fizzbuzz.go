@@ -7,6 +7,8 @@ func Fizzbuzz(number int) string {
 		return "Fizz"
 	} else if number == 4 {
 		return "4"
+	} else if number == 5 {
+		return "Buzz"
 	}
 	return "1"
 }
