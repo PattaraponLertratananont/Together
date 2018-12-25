@@ -1,5 +1,5 @@
 package fizzbuzz
 
-func Fizzbuzz(param int) string {
+func Fizzbuzz(number int) string {
 	return "1"
 }
