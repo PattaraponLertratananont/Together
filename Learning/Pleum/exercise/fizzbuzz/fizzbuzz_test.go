@@ -19,7 +19,15 @@ func TestFizzBuzzTwo(t *testing.T) {
 func TestFizzBuzzThree(t *testing.T) {
 	result := Fizzbuzz(3)
 
-	if result != "3" {
-		t.Errorf("Expect 3 but it gets: %q", result)
+	if result != "Fizz" {
+		t.Errorf("Expect Fizz but it gets: %q", result)
+	}
+}
+
+func TestFizzBuzzFour(t *testing.T) {
+	result := Fizzbuzz(4)
+
+	if result != "4" {
+		t.Errorf("Expect 4 but it gets %q", result)
 	}
 }
