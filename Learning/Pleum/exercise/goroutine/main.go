@@ -30,6 +30,8 @@ func main() {
 	start := time.Now()
 	go buyGkassesMinimart()
 	go buyWatchesCentral()
+	ch := make(chan<- string)
+	go sendToA(ch)
 	buyFruitsParagon()
 	buyCarHonda()
 	fmt.Println("total time: ", time.Since(start))
