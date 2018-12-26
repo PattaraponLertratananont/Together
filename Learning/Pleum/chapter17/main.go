@@ -7,16 +7,16 @@ import (
 )
 
 func main() {
-	var input float64
+	var input int
 	for {
-		fmt.Print("Input 1 number: ")
+		fmt.Print("Input non-negative number: ")
 		fmt.Scanln(&input)
 		if input >= 0 {
 			break
 		}
 	}
 
-	fmt.Printf("Square root %d = %.2f \n", int32(input), math.Sqrt(input))
+	fmt.Printf("Square root %d = %.2f \n", input, math.Sqrt(float64(input)))
 }
 func init() {
 	fmt.Println("Hi, chapter 17 ")
