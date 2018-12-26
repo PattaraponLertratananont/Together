@@ -7,6 +7,13 @@ func main() {
 	var input int
 	fmt.Print("Input n: ")
 	fmt.Scanln(&input)
+
+	for column := 0; column < input; column++ {
+		for row := 0; row < input; row++ {
+			fmt.Print("*")
+		}
+		fmt.Println("")
+	}
 }
 func init() {
 	fmt.Println("Hi, chapter19")
