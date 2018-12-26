@@ -13,6 +13,11 @@ func main() {
 			count++
 		}
 	}
+	if count == 2 {
+		fmt.Println("It's prime number.")
+	} else {
+		fmt.Println("It is not prime number.")
+	}
 
 }
 
