@@ -8,8 +8,13 @@ import (
 
 func main() {
 	var input float64
-	fmt.Print("Input 1 number: ")
-	fmt.Scanln(&input)
+	for {
+		fmt.Print("Input 1 number: ")
+		fmt.Scanln(&input)
+		if input >= 0 {
+			break
+		}
+	}
 
 	fmt.Printf("Square root %d = %.2f \n", int32(input), math.Sqrt(input))
 }
