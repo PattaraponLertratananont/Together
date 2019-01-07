@@ -12,11 +12,20 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println(secret)
-	fmt.Println(byteslice)
+	fmt.Println("Before:", secret)
+	fmt.Println("After:", byteslice)
+
+	user1 := `123456`
+
+	err = bcrypt.CompareHashAndPassword(byteslice, []byte(user1))
+	if err != nil {
+		fmt.Println("Wrong password!.")
+		return
+	}
+	fmt.Println("Login! success.")
 
 }
 func init() {
-	fmt.Println("Hi, bcrypt golang.")
+	fmt.Println("Hi!, bcrypt golang.")
 	fmt.Println("------------------------------")
 }
