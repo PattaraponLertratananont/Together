@@ -8,9 +8,13 @@ func main() {
 	fmt.Print("Input number: ")
 	fmt.Scanln(&keyboard)
 
-	for i := 0; i < keyboard; i++ {
-		for j := 0; j < keyboard; j++ {
-			fmt.Print("*")
+	for i := 1; i <= keyboard; i++ {
+		for j := 1; j <= keyboard; j++ {
+			if (i+j)%2 == 0 {
+				fmt.Print("1")
+			} else {
+				fmt.Print("0")
+			}
 		}
 		fmt.Println()
 	}
