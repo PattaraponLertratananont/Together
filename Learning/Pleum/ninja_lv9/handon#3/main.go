@@ -6,7 +6,7 @@ import (
 	"sync"
 )
 
-//! Goroutines incrementer
+//! Goroutines incrementer make race_condition | solve by Mutex
 func main() {
 	fmt.Println("Start goroutine:", runtime.NumGoroutine())
 
